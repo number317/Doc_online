@@ -3,7 +3,7 @@
 
 This is a simple maven web project, you can get it with:
 ```bash
-git clone git@github.com:number317/Doc_online.git`
+git clone git@github.com:number317/Doc_online.git
 cd Doc_online
 mvn clean package
 ```

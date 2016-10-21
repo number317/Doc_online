@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app id="WebApp_ID" version="2.5">
+  <display-name>Login</display-name>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+  </welcome-file-list>
+
+  <servlet>
+    <servlet-name>ShellServlet</servlet-name>
+    <servlet-class>com.jsos.shell.ShellServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ShellServlet</servlet-name>
+    <url-pattern>/servlet/ShellServlet</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>LoginCheck</servlet-name>
+    <servlet-class>Servlet.LoginCheck</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>LoginCheck</servlet-name>
+    <url-pattern>/LoginCheck.do</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>SearchFile</servlet-name>
+    <servlet-class>Servlet.SearchFile</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>SearchFile</servlet-name>
+    <url-pattern>/SearchFile.do</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>View</servlet-name>
+    <servlet-class>Servlet.View</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>View</servlet-name>
+    <url-pattern>/View.do</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>AccountSet</servlet-name>
+    <servlet-class>Servlet.AccountSet</servlet-class>
+    </servlet>
+  <servlet-mapping>
+    <servlet-name>AccountSet</servlet-name>
+    <url-pattern>/AccountSet.do</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>UpdatePassword</servlet-name>
+    <servlet-class>Servlet.UpdatePassword</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>UpdatePassword</servlet-name>
+    <url-pattern>/UpdatePassword.do</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>Upload</servlet-name>
+    <servlet-class>Servlet.Upload</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Upload</servlet-name>
+    <url-pattern>/Upload.do</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>Download</servlet-name>
+    <servlet-class>Servlet.Download</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Download</servlet-name>
+    <url-pattern>/Download.do</url-pattern>
+  </servlet-mapping>
+
+    <servlet>
+        <servlet-name>Employees</servlet-name>
+        <servlet-class>Servlet.Employees</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Employees</servlet-name>
+        <url-pattern>/Employees.do</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>Files</servlet-name>
+        <servlet-class>Servlet.Files</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Files</servlet-name>
+        <url-pattern>/Files.do</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>Downloads</servlet-name>
+        <servlet-class>Servlet.Downloads</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Downloads</servlet-name>
+        <url-pattern>/Downloads.do</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>Admins</servlet-name>
+        <servlet-class>Servlet.Admins</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Admins</servlet-name>
+        <url-pattern>/Admins.do</url-pattern>
+    </servlet-mapping>
+</web-app>

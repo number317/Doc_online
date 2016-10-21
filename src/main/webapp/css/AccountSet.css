@@ -1,0 +1,43 @@
+body{
+   background: url(../images/banner.jpg)repeat;
+   padding:50px 0px 30px 0px;
+   font-size: 100%;
+}
+
+.Setting{
+    width:600px;
+    height:550px;
+    border: 1px #2B2B2B;
+    margin:0 auto;
+background: #2B2B2B;
+}
+.Account input[type="password"]{
+    width:200px;
+    margin: -15px 200px 5px 200px;
+
+}
+.Account input[type="submit"]{
+    margin: 10px 100px 5px 485px;
+}
+.Account h1,h2,h3,p{
+    text-align: center;
+    color: #C4C4C4;
+}
+.Upload form{
+    margin: 10px 20px 5px 100px;
+}
+.OwnFile{
+    width:200px;
+    height: 30px;
+    margin:15px 200px 5px 220px;
+    background: #1A1A1A;
+    border: 1px #1A1A1A;
+    text-color: white;
+    text-align: center;
+}
+a{
+display: block;
+    color: #C4C4C4;
+    text-decoration: none;
+    margin: 0 auto;
+}

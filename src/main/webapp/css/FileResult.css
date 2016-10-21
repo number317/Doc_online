@@ -1,0 +1,51 @@
+body{
+    background: url(../images/wallpaper12.jpg)repeat;
+    font-family: 'Roboto', sans-serif;
+    font-size: 100%;
+}
+.Result{
+    position:relative;
+}
+.Result a{
+    text-align: left;
+    color: white;
+    text-decoration: none;
+    font-style: italic
+}
+.Ver_hr hr{
+    position: absolute;
+    left: 850px;
+    top: 20px;
+}
+#View {
+    position: absolute;
+    width:100px;
+    height:25px;
+    border:1px solid #1A1A1A;
+    margin-left:650px;
+    margin-top:-200px;
+    background:#1A1A1A;
+}
+#Download {
+    position: absolute;
+    width:100px;
+    height:25px;
+    border:1px solid #1A1A1A;
+    margin-left:650px;
+    margin-top:-150px;
+
+background:#1A1A1A;
+}
+#View a{
+    display:block;
+    width:100px;
+    height:25px;
+    margin-left:18px;
+}
+#Download a{
+    display:block;
+    width:100px;
+    height:25px;
+    margin-left:10px;
+}
+

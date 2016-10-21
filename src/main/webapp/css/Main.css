@@ -1,0 +1,37 @@
+body{
+   background: url(../images/banner.jpg)repeat;
+   padding:10px 0px 30px 0px;
+   font-size: 100%;
+}
+.Account{
+
+}
+.Account a{
+    text-align: left;
+    text-decoration: none;
+    color: #C4C4C4;
+}
+
+.Statistics h3{
+    color: yellow;
+}
+.Statistics a{
+    text-align: left;
+    text-decoration: none;
+    color: #C4C4C4;
+}
+.Latest{
+    background: #2B2B2B;
+    width: 33%;
+    float: left;
+}
+.MostDownload{
+    background: #2B2B2B;
+    width: 33%;
+    float: left;
+}
+.MostBrowse{
+    background: #2B2B2B;
+    width: 33%;
+    float: left;
+}

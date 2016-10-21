@@ -1,0 +1,13 @@
+body{
+    background: url(../images/banner.jpg)repeat;
+}
+input{
+    position:relative;
+    top:-85px;
+    left:-5px;
+}
+iframe{
+	position:fixed;
+	left:0px;
+	top:100px;
+}

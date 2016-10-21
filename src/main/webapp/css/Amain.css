@@ -1,0 +1,12 @@
+body{
+   background: url(../images/banner.jpg)repeat;
+   padding:10px 0px 30px 0px;
+   font-size: 100%;
+}
+a{
+    text-align: left;
+    color: white;
+    text-decoration: none;
+    font-style: italic;
+    font-size: 25px;
+}

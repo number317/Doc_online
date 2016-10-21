@@ -11,15 +11,6 @@
   </welcome-file-list>
 
   <servlet>
-    <servlet-name>ShellServlet</servlet-name>
-    <servlet-class>com.jsos.shell.ShellServlet</servlet-class>
-  </servlet>
-  <servlet-mapping>
-    <servlet-name>ShellServlet</servlet-name>
-    <url-pattern>/servlet/ShellServlet</url-pattern>
-  </servlet-mapping>
-
-  <servlet>
     <servlet-name>LoginCheck</servlet-name>
     <servlet-class>Servlet.LoginCheck</servlet-class>
   </servlet>

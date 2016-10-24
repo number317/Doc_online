@@ -73,11 +73,13 @@ public class Upload extends HttpServlet {
                         String filePath = path+"/"+uuid.toString()+"/"+uploadFile.getName();
                         FileDBImp fileDBImp = new FileDBImp();
                         fileDBImp.uploadFile(fileId,fileName,fileType,fileClassId,fileClassName,empId,deptId,deptName,filePath);
-                        String sourceFilePath = path+"/"+uuid.toString();
-                        String sourceFileName = uploadFile.getName();
-                        OfficeToPdf officeToPdf = new OfficeToPdf(sourceFilePath, sourceFileName);
-                        officeToPdf.Permission();
-                        officeToPdf.ToPdf();
+                        if(!fileType.equals("pdf")) {
+                            String sourceFilePath = path + "/" + uuid.toString();
+                            String sourceFileName = uploadFile.getName();
+                            OfficeToPdf officeToPdf = new OfficeToPdf(sourceFilePath, sourceFileName);
+                            officeToPdf.Permission();
+                            officeToPdf.ToPdf();
+                        }
                         response.sendRedirect("AccountSet.jsp");
                     }
                 }

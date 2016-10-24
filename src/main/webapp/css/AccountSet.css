@@ -19,7 +19,7 @@ background: #2B2B2B;
 .Account input[type="submit"]{
     margin: 10px 100px 5px 485px;
 }
-.Account h1,h2,h3,p{
+.Account h1,h2,h3,h5,p{
     text-align: center;
     color: #C4C4C4;
 }

@@ -4,6 +4,9 @@
 This is a simple maven web project, you can get it with:
 ```bash
 git clone git@github.com:number317/Doc_online.git
+```
+After you get the project, you need to modify the **ConnectionBroker.java** in the src/main/java/ConnectionPool firstly. Change the **username** and **password**(**on line 23 and 24**) to your own mysql account's, or mysql connection will failue. Then you can package the project:
+```
 cd Doc_online
 mvn clean package
 ```

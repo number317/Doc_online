@@ -18,8 +18,8 @@ class ConnectionBroker implements BuildConnection {
 	private DDConnectionBroker broker = null;
 
 	private void setUp() {
-		driver = "com.mysql.jdbc.Driver";
-		url = "jdbc:mysql://localhost:3306/fileOnline_db";
+		driver = "com.mysql.cj.jdbc.Driver";
+		url = "jdbc:mysql://localhost:3306/fileOnline_db?serverTimezone=UTC";
 		username = "root";
 		password = "arch53212765";
 		minConnections = 2;

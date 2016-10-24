@@ -1,3 +1,4 @@
+use fileOnline_db;
 drop procedure if exists pro_GetPerNum$0;
 delimiter #
 create procedure pro_GetPerNum$0(in Id char(14))
@@ -43,7 +44,7 @@ begin
 end#
 delimiter ;
 
-drop procedure if exists pro_GetDownloadInfo();
+drop procedure if exists pro_GetDownloadInfo;
 delimiter #
 create procedure pro_GetDownloadInfo()
 comment "Get download infomation."
@@ -52,7 +53,7 @@ begin
 end#
 delimiter ;
 
-drop procedure if exists pro_GetAdminInfo();
+drop procedure if exists pro_GetAdminInfo;
 delimiter #
 create procedure pro_GetAdminInfo()
 comment "Get admin's infomation."

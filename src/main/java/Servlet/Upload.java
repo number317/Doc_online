@@ -41,7 +41,7 @@ public class Upload extends HttpServlet {
                     else{
                         InputStream uploadStream = item.getInputStream();
                         File uploadFile = new File(item.getName());
-                        String path = request.getRealPath("/Files");
+                        String path = request.getSession().getServletContext().getRealPath("/Files");
                         UUID uuid = UUID.randomUUID();
                         File id = new File(path+"/"+uuid.toString());
                         id.mkdirs();

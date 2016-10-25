@@ -1,5 +1,5 @@
 #Instruction
-**Important**: *This project runs on Linux and depends on libreoffice to convert documents.*
+**Important**: *This project runs on Linux and depends on libreoffice to convert documents. If you run it on Windows or Linux without libreoffic, you can only upload pdf document(don't use its convert function), or it will crash! In fact, using openoffice to convert document is more compatible, but it's complicated. So why not to use a single command? I like linux.^_^*
 
 This is a simple maven web project, you can get it with:
 ```bash

@@ -70,9 +70,8 @@ public class Upload extends HttpServlet {
                         String empId = (String)session.getAttribute("id");
                         String deptId = employeeDBImp.getDeptId(empId);
                         String deptName = employeeDBImp.getDeptName(empId);
-                        String filePath = path+"/"+uuid.toString()+"/"+uploadFile.getName();
                         FileDBImp fileDBImp = new FileDBImp();
-                        fileDBImp.uploadFile(fileId,fileName,fileType,fileClassId,fileClassName,empId,deptId,deptName,filePath);
+                        fileDBImp.uploadFile(fileId,fileName,fileType,fileClassId,fileClassName,empId,deptId,deptName);
                         if(!fileType.equals("pdf")) {
                             String sourceFilePath = path + "/" + uuid.toString();
                             String sourceFileName = uploadFile.getName();

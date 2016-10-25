@@ -145,10 +145,10 @@ delimiter ;
 
 drop procedure if exists pro_UploadFile;
 delimiter #
-create procedure pro_UploadFile(in FileId char(36), in FileName varchar(100), in FileType varchar(6), in FileClassId char(5), in FileClassName varchar(15), in FileEmpId char(14), in FileDeptId char(6), in FileDeptName varchar(12), in FilePath varchar(100))
+create procedure pro_UploadFile(in FileId char(36), in FileName varchar(100), in FileType varchar(6), in FileClassId char(5), in FileClassName varchar(15), in FileEmpId char(14), in FileDeptId char(6), in FileDeptName varchar(12))
 comment "Upload file."
 begin
-	insert into Files values(FileId, FileName, FileType, FileClassId, FileClassName, FileEmpId, FileDeptId, FileDeptName, 0, now(), 0, load_file(FilePath));
+	insert into Files values(FileId, FileName, FileType, FileClassId, FileClassName, FileEmpId, FileDeptId, FileDeptName, 0, now(), 0);
 end#
 delimiter ;
 

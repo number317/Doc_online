@@ -46,7 +46,6 @@ create table Files(
 		Browse_Times int default 0 not null,
 		Upload_Time datetime not null,
 		Download_times int default 0 not null,
-		File_Content mediumblob,
 		foreign key (File_FileClass_ID) references FileClass (FileClass_ID),
 		foreign key (File_Employee_ID) references Employees (Employee_ID),
 		foreign key (File_Dept_ID) references Departments (Dept_ID)

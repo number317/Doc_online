@@ -115,9 +115,9 @@ public class FileDBImp {
         pStatement.executeQuery();
     }
 
-    public void uploadFile(String fileId, String fileName, String fileType, String fileClassId, String fileClassName, String empId, String deptId, String deptName, String filePath) throws SQLException {
+    public void uploadFile(String fileId, String fileName, String fileType, String fileClassId, String fileClassName, String empId, String deptId, String deptName) throws SQLException {
         connection = factory.getConnection();
-        pStatement = connection.prepareStatement("call pro_UploadFile("+"\""+fileId+"\",\""+fileName+"\",\""+fileType+"\",\""+fileClassId+"\",\""+fileClassName+"\",\""+empId+"\",\""+deptId+"\",\""+deptName+"\",\""+filePath+"\")");
+        pStatement = connection.prepareStatement("call pro_UploadFile("+"\""+fileId+"\",\""+fileName+"\",\""+fileType+"\",\""+fileClassId+"\",\""+fileClassName+"\",\""+empId+"\",\""+deptId+"\",\""+deptName+"\""+")");
         pStatement.executeQuery();
     }
 
@@ -157,22 +157,15 @@ public class FileDBImp {
 
 
     public static void main(String args[]) throws SQLException {
-        ArrayList<String> info;
-        String id="3d325260-ca62-4f45-9261-047be8c71d3c";
-        FileDBImp fileDBImp = new FileDBImp();
-        info = fileDBImp.getFileInfoById(id);
-        for(int i=0; i< info.size();i++){
-            System.out.println(info.get(i));
-        }
+        String fileId = "9ad100b3-8af7-3433-8bab-72defa78e3e0";
+        String fileName = "test";
+        String fileType = "pdf";
+        String fileClassId = "00001";
+        String fileClassName = "Normal";
         String empId = "01234567890123";
-        String fileName = info.get(0);
-        String fileType = info.get(1);
-        String deptName = info.get(6);
-        String fileClassName = info.get(3);
-        fileDBImp.insertDownload(empId,id,fileName,deptName,fileClassName);
-        ArrayList<File> files = fileDBImp.getFileInfo();
-        for(int i=0;i<files.size();i++){
-            System.out.println(files.get(i).getFile_ID()+"  "+files.get(i).getFile_name()+"  "+files.get(i).getFile_type()+"  "+files.get(i).getFile_Dept_ID()+"   "+files.get(i).getFile_Dept_name()+"  "+files.get(i).getFile_Employee_ID()+"   "+files.get(i).getFile_FileClass_ID()+"   "+files.get(i).getFile_FileClass_name()+files.get(i).getUpload_Time()+"   "+files.get(i).getBrowse_Times()+"    "+files.get(i).getUpload_Time());
-        }
+        String deptId = "000001";
+        String deptName = "Technology";
+        FileDBImp fileDBImp = new FileDBImp();
+        fileDBImp.uploadFile(fileId,fileName,fileType,fileClassId,fileClassName,empId,deptId,deptName);
     }
 }
